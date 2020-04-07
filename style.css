@@ -1,0 +1,751 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&family=Roboto:wght@700&display=swap');
+@font-face {
+	font-family: 'TTTogether';
+	src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/TTTogetherA.woff')
+		format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'TmonMonsori';
+	src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/TmonMonsori.woff')
+		format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'KOMACON';
+	src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_seven@1.2/KOMACON.woff')
+		format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'MapoPeacefull';
+	src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/MapoPeacefullA.woff')
+		format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Recipekorea';
+	src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/Recipekorea.woff')
+		format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'GmarketSansMedium';
+	src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff')
+		format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'GmarketSansBold';
+	src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff')
+		format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Cafe24Ohsquare';
+	src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/Cafe24Ohsquare.woff')
+		format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'CookieRunOTF-Bold';
+	src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.0/CookieRunOTF-Bold00.woff')
+		format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'yg-jalnan';
+	src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.2/JalnanOTF00.woff')
+		format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+body {
+	font-family: 'Noto Sans KR', sans-serif;
+	background-color: #ffffff;
+	box-sizing: border-box;
+	color: #222647;
+}
+.quote {
+	color: black;
+	font-family: 'GmarketSansMedium';
+	text-align: center;
+	font-size: 1.2rem;
+	padding-top: 8px;
+}
+.file-upload {
+	padding: 9% 5%;
+	padding-bottom: 6%;
+	margin: 0 auto;
+	border-radius: 12px; /* border: solid 1.2px #f6f7fa; */
+	background: linear-gradient(to bottom, rgba(208, 217, 223, 0.726), rgba(114, 131, 141, 0.726));
+}
+.file-upload-btn {
+	width: 100%;
+	margin: 0;
+	color: #fff;
+	background: #1fb264;
+	border: none;
+	padding: 10px;
+	border-radius: 4px;
+	border-bottom: 4px solid #15824b;
+	transition: all 0.2s ease;
+	outline: none;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+.file-upload-btn:hover {
+	background: #1aa059;
+	color: #ffffff;
+	transition: all 0.2s ease;
+	cursor: pointer;
+}
+.file-upload-btn:active {
+	border: 0;
+	transition: all 0.2s ease;
+}
+.file-upload-content {
+	display: none;
+	text-align: center;
+}
+#loading {
+	display: none;
+}
+.file-upload-input {
+	position: absolute;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	outline: none;
+	opacity: 0;
+	cursor: pointer;
+}
+.image-upload-wrap {
+	width: 60%;
+	margin: 0 auto;
+	position: relative;
+	object-fit: contain;
+	border-radius: 10px;
+	border: dashed 3px rgba(223, 190, 106, 0);
+	background-color: #ffffff;
+}
+.image-dropping,
+.image-upload-wrap:hover {
+	background-color: #ffffffe8;
+	border: 3px dashed rgba(223, 190, 106, 0);
+}
+.image-title-wrap {
+	padding: 0 15px 15px 15px;
+	color: #222;
+}
+.drag-text {
+	text-align: center;
+}
+.drag-text h3 {
+	font-weight: 500;
+	text-transform: uppercase;
+}
+.file-upload-image {
+	max-height: 60%;
+	max-width: 60%;
+	margin: auto;
+	padding: 10px;
+}
+.try-again-btn {
+	padding: 10px;
+	border-radius: 40px;
+	border: solid 1.3px rgba(247, 213, 129, 0.712);
+	background-color: #203044;
+}
+.try-again-text {
+	font-family: 'MapoPeacefull';
+	display: block;
+	font-size: 1.7rem;
+	text-align: center;
+	color: #ffffff;
+	padding: 4px 15px;
+}
+.remove-image:hover {
+	background: #c13b2a;
+	color: #ffffff;
+	transition: all 0.2s ease;
+	cursor: pointer;
+}
+.remove-image:active {
+	border: 0;
+	transition: all 0.2s ease;
+}
+.navbar-light {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background: #283048; /* fallback
+for old browsers */
+	background: linear-gradient(
+		to top,
+		#90acbd86,
+		rgba(40, 45, 90, 0.897)
+	); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.title1 .text1 {
+	font-size: 1.4rem;
+	color: rgba(248, 224, 161, 0.966);
+	font-family: 'KOMACON';
+}
+.title1 .text2 {
+	font-size: 1rem;
+}
+.navbar-light .navbar-brand {
+	margin: 0 auto;
+	font-family: 'TTTogether', sans-serif;
+	font-size: 3rem;
+	text-align: center;
+	color: rgba(255, 255, 255, 0.959);
+}
+.navbar-light .navbar-toggler {
+	border-color: transparent;
+}
+.navbar-light .navbar-toggler:hover {
+	border-color: transparent;
+}
+.navbar-toggler {
+	color: white;
+} /* .section { margin-top: 2rem; } */
+.title1 {
+	/* background-color: rgb(21, 27, 34); */ /* margin-bottom: 1.4rem; */ /* font-size: 2.7rem; */
+	text-align: center;
+	font-family: 'Helvetica Neue', Helvetica, Arials, sans;
+	color: rgba(247, 213, 129, 0.712);
+	text-align: center;
+}
+.subtitle {
+	font-family: 'MapoPeacefull';
+	line-height: 1.53;
+	text-align: center;
+	color: #35465d;
+}
+.subtext1 {
+	padding-top: 5rem;
+	font-size: 3rem;
+}
+.subtext2 {
+	padding-top: 1.7rem;
+	font-size: 2.8rem;
+	justify-content: center;
+}
+.subtext2 .num1 {
+	font-family: 'Recipekorea';
+	font-size: 2.7rem;
+	color: rgb(12, 19, 32);
+}
+.subtext2 .num2 {
+	font-family: 'Recipekorea';
+	font-size: 2.7rem;
+	color: rgb(12, 19, 32);
+}
+.subtext3 {
+	padding-top: 1.7rem;
+	font-size: 2.8rem;
+	padding-bottom: 5rem;
+} /* On screens that are 600px or less, set the background color to olive */
+@media screen and (max-width: 600px) {
+	html {
+		font-size: 11px;
+	}
+	.navbar-brand {
+		font-size: 2rem;
+		margin: 0 auto;
+	}
+	.help-photo .help-photo-text1-2 {
+		font-family: 'Cafe24Ohsquare'; /* padding-top: 5px; */
+	}
+	.help-photo .help-photo-text2-1 {
+		font-family: 'Cafe24Ohsquare';
+		padding-right: 2px;
+		padding-top: 3px;
+	}
+}
+.youtube-link {
+	font-size: 1.5rem;
+	line-height: 1.71;
+	text-align: center;
+	color: #f73737;
+	text-decoration: underline;
+}
+.youtube-link:hover {
+	font-size: 1.5rem;
+	line-height: 1.71;
+	text-align: center;
+	color: #f73737;
+	text-decoration: underline;
+}
+.youtube-icon {
+	width: 30px;
+	height: 27.262px;
+}
+.upload {
+	width: 20%;
+}
+.upload-text1 {
+	font-family: 'MapoPeacefull';
+	width: 58%;
+	font-size: 1.5rem;
+	line-height: 1.53;
+	text-align: center;
+	color: #35465d;
+	margin: 0 auto;
+}
+.upload-text2 {
+	font-family: 'MapoPeacefull';
+	width: 58%;
+	font-size: 1.5rem;
+	line-height: 1.53;
+	text-align: center;
+	color: #35465d;
+	margin: 0 auto;
+}
+.footer {
+	background-color: initial;
+	color: initial;
+}
+.bar-container {
+	height: 2.7rem;
+}
+.animal-label {
+	/* padding-top: 2rem; padding-bottom: 2rem; */
+	font-family: 'GmarketSansBold';
+	color: rgb(8, 13, 22);
+	width: 60%;
+	text-align: left; /* height: 2rem; */
+}
+.noraml-box {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 1.5rem;
+	border-radius: 10px;
+	width: 100%;
+	background-color: rgb(167, 175, 187);
+}
+.normal-bar {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 2rem;
+	border-radius: 10px;
+	background-color: rgb(9, 168, 70);
+}
+.talmo1-box {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 2rem;
+	border-radius: 10px;
+	width: 100%;
+	background-color: rgb(149, 157, 170);
+}
+.talmo1-bar {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 2rem;
+	border-radius: 10px;
+	background-color: rgb(233, 236, 13);
+}
+.talmo2-box {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 2rem;
+	border-radius: 10px;
+	width: 100%;
+	background-color: rgb(149, 157, 170);
+}
+.talmo2-bar {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 2rem;
+	border-radius: 10px;
+	background-color: rgb(230, 91, 10);
+}
+.talmo3-box {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 2rem;
+	border-radius: 10px;
+	width: 100%;
+	background-color: rgb(147, 156, 170);
+}
+.talmo3-bar {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 2rem;
+	border-radius: 10px;
+	background-color: rgb(207, 20, 20);
+}
+.talmo4-box {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 2rem;
+	border-radius: 10px;
+	width: 100%;
+	background-color: rgb(167, 175, 187);
+}
+.talmo4-bar {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 2rem;
+	border-radius: 10px;
+	background-color: rgb(18, 182, 194);
+}
+.talmo5-box {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 2rem;
+	border-radius: 10px;
+	width: 100%;
+	background-color: rgb(167, 175, 187);
+}
+.talmo5-bar {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 2rem;
+	border-radius: 10px;
+	background-color: rgb(6, 39, 109);
+}
+.talmo6-box {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 2rem;
+	border-radius: 10px;
+	width: 100%;
+	background-color: rgb(167, 175, 187);
+}
+.talmo6-bar {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 2rem;
+	border-radius: 10px;
+	background-color: rgb(219, 49, 235);
+}
+.talmo7-box {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 2rem;
+	border-radius: 10px;
+	width: 100%;
+	background-color: rgb(167, 175, 187);
+}
+.talmo7-bar {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 2rem;
+	border-radius: 10px;
+	background-color: rgb(108, 12, 199);
+}
+.talmo8-box {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 2rem;
+	border-radius: 10px;
+	width: 100%;
+	background-color: rgb(167, 175, 187);
+}
+.talmo8-bar {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 2rem;
+	border-radius: 10px;
+	background-color: #ec386e;
+}
+.percent-text {
+	font-size: 1rem;
+	color: #ffffff;
+}
+#label-container2 {
+	width: 50%;
+	margin-left: 2rem; /* margin: 0
+auto; */
+}
+.result-message {
+	font-size: 2rem;
+}
+.animal-explain {
+	padding-bottom: 0.8rem;
+	font-family: 'MapoPeacefull';
+	font-size: 1.9rem;
+	color: white;
+}
+.normal-animal-title {
+	padding-top: 1.5rem;
+	padding-bottom: 2rem;
+	font-size: 3.2rem;
+	font-family: 'TmonMonsori';
+	color: rgba(148, 117, 30, 0.808);
+}
+.dinosaur-animal-celeb {
+	color: #3ba363;
+	font-size: 1.2rem;
+}
+.talmo1-animal-title {
+	padding-top: 1.5rem;
+	padding-bottom: 2rem;
+	font-size: 3.2rem;
+	font-family: 'TmonMonsori';
+	color: rgba(148, 117, 30, 0.808);
+}
+.deer-animal-celeb {
+	color: #3ba363;
+	font-size: 1.2rem;
+}
+.talmo2-animal-title {
+	padding-top: 1.5rem;
+	padding-bottom: 2rem;
+	font-size: 3.2rem;
+	font-family: 'TmonMonsori';
+	color: rgba(148, 117, 30, 0.808);
+}
+.cat-animal-celeb {
+	color: #ff6c0a;
+	font-size: 1.2rem;
+}
+.talmo3-animal-title {
+	padding-top: 1.5rem;
+	padding-bottom: 2rem;
+	font-size: 3.2rem;
+	font-family: 'TmonMonsori';
+	color: rgba(148, 117, 30, 0.808);
+}
+.dog-animal-celeb {
+	color: #548dd4;
+	font-size: 1.2rem;
+}
+.talmo4-animal-title {
+	padding-top: 1.5rem;
+	padding-bottom: 2rem;
+	font-size: 3.2rem;
+	font-family: 'TmonMonsori';
+	color: rgba(148, 117, 30, 0.808);
+}
+.rabbit-animal-celeb {
+	color: #e56995;
+	font-size: 1.2rem;
+}
+.talmo5-animal-title {
+	padding-top: 1.5rem;
+	padding-bottom: 2rem;
+	font-size: 3.2rem;
+	font-family: 'TmonMonsori';
+	color: rgba(148, 117, 30, 0.808);
+}
+.bear-animal-celeb {
+	color: #9b6b43;
+	font-size: 1.2rem;
+}
+.talmo6-animal-title {
+	padding-top: 1.5rem;
+	padding-bottom: 2rem;
+	font-size: 3.2rem;
+	font-family: 'TmonMonsori';
+	color: rgba(148, 117, 30, 0.808);
+}
+.fox-animal-celeb {
+	color: #31849b;
+	font-size: 1.2rem;
+}
+.talmo7-animal-title {
+	padding-top: 1.5rem;
+	padding-bottom: 2rem;
+	font-size: 3.2rem;
+	font-family: 'TmonMonsori';
+	color: rgba(148, 117, 30, 0.808);
+}
+.talmomo7-celeb {
+	color: #31849b;
+	font-size: 1.2rem;
+}
+.talmo8-animal-title {
+	padding-top: 1.5rem;
+	padding-bottom: 2rem;
+	font-size: 3.2rem;
+	font-family: 'TmonMonsori';
+	color: rgba(148, 117, 30, 0.808);
+}
+.talmomo8-celeb {
+	color: #31849b;
+	font-size: 1.2rem;
+} /* gender */
+input#gender {
+	display: none;
+}
+label {
+	cursor: pointer;
+	display: inline-block;
+	width: 90px;
+	height: 41px;
+	box-shadow: 0 0 0 8px #e5e9ea inset;
+	border-radius: 30px;
+	position: relative;
+}
+.knob {
+	position: absolute;
+	width: 41px;
+	top: 0;
+	left: 0;
+	height: 41px;
+	border-radius: 50%;
+	box-shadow: 0 0 0 8px #f470a7 inset;
+	background-color: #fbd4e6;
+	transition: 0.3s;
+}
+.knob > i {
+	position: absolute;
+	width: 4px;
+	height: 18px;
+	top: 100%;
+	background-color: #f470a7;
+	left: calc(50% - 2px);
+}
+.knob > i:before,
+.knob > i:after {
+	width: 6px;
+	position: absolute;
+	top: 42%;
+	content: '';
+	height: 4px;
+	background-color: #f470a7;
+}
+.knob > i:before {
+	left: 4px;
+}
+.knob > i:after {
+	left: -6px;
+}
+input:checked + label > .knob {
+	box-shadow: 0 0 0 8px #a1c6dd inset;
+	background-color: #e2ecf4;
+	transform: translateX(49px) rotate(-140deg);
+}
+input:checked + label > .knob > i {
+	background-color: #a1c6dd;
+}
+input:checked + label > .knob > i:after,
+input:checked + label > .knob > i:before {
+	background-color: #a1c6dd;
+}
+input:checked + label > .knob > i:after {
+	top: 14.5px;
+	width: 12px;
+	left: -7px;
+	transform: rotate(45deg);
+}
+input:checked + label > .knob > i:before {
+	top: 13px;
+	width: 12px;
+	left: 0px;
+	transform: rotate(134deg);
+}
+.hidden_bundle {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 5% 8%;
+	margin: 0 auto;
+	border-radius: 12px;
+	border: solid 0.5px rgba(220, 226, 230, 0.726);
+	background: linear-gradient(to bottom, rgba(208, 217, 223, 0.726), rgba(141, 155, 163, 0.726));
+}
+.hidden_bundle_bundle {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.help {
+	margin-top: 5rem;
+}
+.help i {
+	margin-right: 6px;
+	padding-top: 0.2rem;
+}
+.help-photo {
+	display: flex;
+	align-items: center;
+}
+.help-photo .help-photo-text1-2 {
+	color: rgb(12, 19, 32);
+	font-family: 'yg-jalnan';
+	padding-top: 0.2rem;
+}
+.help-photo .help-photo-text2-1 {
+	color: rgb(12, 19, 32);
+	font-family: 'yg-jalnan'; /* padding-top: 0.1rem; */
+	padding-right: 0.2rem;
+}
+.drag-text i {
+	font-size: 7rem;
+	padding-top: 5rem;
+	color: #2f4152;
+}
+.explain-title {
+	color: rgb(26, 30, 53);
+	font-size: 2.3rem;
+	font-family: 'yg-jalnan';
+}
+.opinion-title {
+	padding-top: 2rem;
+	color: rgb(26, 30, 53);
+	font-size: 2.3rem;
+	font-family: 'yg-jalnan';
+}
+.opinion-content {
+	max-width: 80%;
+	margin-top: 0.5rem;
+	padding-bottom: 2rem;
+	font-family: 'MapoPeacefull';
+	font-size: 1.8rem;
+	color: white;
+	margin: 0 auto;
+}
+.text-center {
+	font-family: 'CookieRunOTF-Bold';
+	font-size: 2rem;
+	border-bottom: 2rem;
+}
+.opt2 {
+	max-width: 70%;
+	justify-content: center;
+}
+.selectext1 {
+	font-family: 'yg-jalnan';
+	font-size: 1.8rem;
+	color: #f470a7;
+}
+.selectext2 {
+	font-family: 'yg-jalnan';
+	font-size: 1.8rem;
+	color: rgb(151, 187, 209);
+} /* 여기서 부터 밑에 버튼 만드는 CSS임 */
