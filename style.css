@@ -749,6 +749,12 @@ input:checked + label > .knob > i:before {
 	font-size: 1.8rem;
 	color: rgb(151, 187, 209);
 } /* 여기서 부터 밑에 버튼 만드는 CSS임 */
-.sns-go {text-align:center; padding: 20px 0;} .sns-go li {display:inline-block; margin: 0 5px; } .sns-go li img {border-radius:50%;}
+
+.sns-go {text-align:center; padding: 20px 0; margin: 0 auto;margin-top:5rem;} 
+.sns-go ul{
+	margin-right:2rem;
+}
+.sns-go li {display:inline-block; margin: 0 5px; } 
+.sns-go li img {border-radius:50%;}
 
 
