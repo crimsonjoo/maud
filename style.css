@@ -197,6 +197,8 @@ for old browsers */
 		#90acbd86,
 		rgba(40, 45, 90, 0.897)
 	); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	padding: 1.1rem 0;
+    padding-top: 1.5rem;
 }
 .title1 .text1 {
 	font-size: 1.4rem;
