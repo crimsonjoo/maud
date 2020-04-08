@@ -197,11 +197,11 @@ for old browsers */
 		#90acbd86,
 		rgba(40, 45, 90, 0.897)
 	); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-	padding: 1.2rem 0;
-    padding-top: 1.4rem;
+	padding: 1.3rem 0;
+    padding-top: 1.5rem;
 }
 .title1 .text1 {
-	font-size: 1.4rem;
+	font-size: 1.7rem;
 	color: rgba(248, 224, 161, 0.966);
 	font-family: 'KOMACON';
 }
@@ -211,7 +211,7 @@ for old browsers */
 .navbar-light .navbar-brand {
 	margin: 0 auto;
 	font-family: 'TTTogether', sans-serif;
-	font-size: 3.3rem;
+	font-size: 4rem;
 	text-align: center;
 	color: rgba(255, 255, 255, 0.959);
 }
