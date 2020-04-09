@@ -760,3 +760,16 @@ input:checked + label > .knob > i:before {
 .sns-go li img {border-radius:50%;}
 
 
+.mine {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.mine-contact1 {
+	font-family: 'MapoPeacefull';
+}
+
+.mine-contact2 {
+	padding-top: 0.4rem;
+}
