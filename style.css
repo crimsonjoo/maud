@@ -317,6 +317,17 @@ for old browsers */
 	color: #35465d;
 	margin: 0 auto;
 }
+
+.upload-text3 {
+	font-family: 'MapoPeacefull';
+	width: 90%;
+	font-size: 1rem;
+	line-height: 1.53;
+	text-align: center;
+	color: #35465d;
+	margin: 0 auto;
+}
+
 .footer {
 	background-color: initial;
 	color: initial;
