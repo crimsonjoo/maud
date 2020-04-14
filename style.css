@@ -786,10 +786,10 @@ input:checked + label > .knob > i:before {
 
 .advertise {
 	display:flex;
-	justify-content: center;
+	justify-content: space-around;
 }
 
 .advertise iframe {
-	width:9rem;
+	width:10rem;
 	height:22rem;
 }
