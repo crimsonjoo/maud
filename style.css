@@ -783,3 +783,8 @@ input:checked + label > .knob > i:before {
 .mine-contact2 {
 	padding-top: 0.4rem;
 }
+
+.advertise iframe {
+	width:9rem;
+	height:16rem;
+}
