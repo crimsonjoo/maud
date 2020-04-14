@@ -321,7 +321,7 @@ for old browsers */
 	font-family:'Recipekorea';
 	color:rgb(12, 19, 32);
 	width: 90%;
-	font-size: 1.1rem;
+	font-size: 0.9rem;
 	line-height: 1.53;
 	text-align: center;
 	margin: 0 auto;
@@ -784,7 +784,12 @@ input:checked + label > .knob > i:before {
 	padding-top: 0.4rem;
 }
 
+.advertise {
+	display:flex;
+	justify-content:space-between;
+}
+
 .advertise iframe {
 	width:9rem;
-	height:16rem;
+	height:19rem;
 }
