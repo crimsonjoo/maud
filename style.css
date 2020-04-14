@@ -786,7 +786,7 @@ input:checked + label > .knob > i:before {
 
 .advertise {
 	display:flex;
-	justify-content: space-around;
+	justify-content: space-between;
 }
 
 .advertise iframe {
