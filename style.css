@@ -789,6 +789,7 @@ input:checked + label > .knob > i:before {
 	justify-content: space-between;
 }
  */
+
 .advertise iframe {
 	width:9rem;
 	height:22rem;
