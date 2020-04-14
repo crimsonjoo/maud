@@ -80,7 +80,7 @@ body {
 	color: black;
 	font-family: 'GmarketSansMedium';
 	text-align: center;
-	font-size: 1.2rem;
+	font-size: 1.5rem;
 }
 .file-upload {
 	padding: 9% 5%;
@@ -762,7 +762,7 @@ input:checked + label > .knob > i:before {
 	color: rgb(151, 187, 209);
 } /* 여기서 부터 밑에 버튼 만드는 CSS임 */
 
-.sns-go {text-align:center; padding: 20px 0; margin: 0 auto;margin-top:5rem;} 
+.sns-go {text-align:center; padding: 8px 0; margin: 0 auto;margin-top:1rem;} 
 .sns-go ul{
 	margin-right:2rem;
 }
