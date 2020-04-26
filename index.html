@@ -122,7 +122,7 @@
 	<script class="jsbin" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
 	<div class="mt-3 container file-upload">
 		<div class="image-upload-wrap">
-			<input class="file-upload-input" type='file' id="file-input" onchange="readFile(this.value);" accept="image/*" />
+			<input class="file-upload-input" type='file' id="file-input" onchange="readURL(this);" accept="image/*" />
 			<div class="drag-text">
 				<i class="fas fa-file-upload"></i>
 				<h3 class="mt-3 pt-3  upload-text1">이마/정수리</h3>
@@ -266,6 +266,42 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/blueimp-load-image/2.18.0/load-image.all.min.js"></script>
 	<script src="script.js"></script>
 
+	<script>
+        function readURL(input) {
+            if (input.files && input.files[0]) {
+                var reader = new FileReader();
+                reader.onload = function(e) {
+                    $('.image-upload-wrap').hide();
+                    $('#loading').show();
+                    $('.file-upload-image').attr('src', e.target.result);
+                    $('.file-upload-content').show();
+                    $('.image-title').html(input.files[0].name);
+                };
+                reader.readAsDataURL(input.files[0]);
+                init().then(function() {
+                    console.log("hello");
+                    predict();
+                    $('#loading').hide();
+                });
+            } else {
+                removeUpload();
+            }
+        }
+
+        function removeUpload() {
+            $('.file-upload-input').replaceWith($('.file-upload-input').clone());
+            $('.file-upload-content').hide();
+            $('.image-upload-wrap').show();
+        }
+        $('.image-upload-wrap').bind('dragover', function() {
+            $('.image-upload-wrap').addClass('image-dropping');
+        });
+        $('.image-upload-wrap').bind('dragleave', function() {
+            $('.image-upload-wrap').removeClass('image-dropping');
+        });
+    </script>
+	
+	
 	<script type="text/javascript">
 		let URL;
 		const urlMale = "https://teachablemachine.withgoogle.com/models/Z_1nV4UY0/";
