@@ -805,6 +805,14 @@ input:checked + label > .knob > i:before {
 	border: solid 2.3px rgba(247, 213, 129, 0.712);
 	max-width:25rem;
 }
+.try-again-text2 {
+	font-family: 'MapoPeacefull';
+	display: block;
+	font-size: 2rem;
+	text-align: center;
+	color: #ffffff;
+	padding: 4px 15px;
+}
 
 .playstore-button {
 	display:flex;
