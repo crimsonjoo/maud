@@ -798,17 +798,17 @@ input:checked + label > .knob > i:before {
 
 .storelink {
 	display:flex;
-	justify-content:space-between;
+	justify-content:center;
 	align-items:center;
 }
 .store-button {
 	border: solid 2.3px rgba(247, 213, 129, 0.712);
-	max-width:24rem;
+	
 }
 .try-again-text2 {
 	font-family: 'MapoPeacefull';
 	display: block;
-	font-size: 1.9rem;
+	font-size: 2.2rem;
 	text-align: center;
 	color: #ffffff;
 	padding: 4px 15px;
@@ -821,7 +821,7 @@ input:checked + label > .knob > i:before {
 }
 
 .playstore-button img {
-	max-width:16rem;
+	max-width:25rem;
 }
 
 
