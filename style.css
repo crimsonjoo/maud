@@ -803,12 +803,12 @@ input:checked + label > .knob > i:before {
 }
 .store-button {
 	border: solid 2.3px rgba(247, 213, 129, 0.712);
-	max-width:25rem;
+	max-width:24rem;
 }
 .try-again-text2 {
 	font-family: 'MapoPeacefull';
 	display: block;
-	font-size: 2rem;
+	font-size: 1.9rem;
 	text-align: center;
 	color: #ffffff;
 	padding: 4px 15px;
