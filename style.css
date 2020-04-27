@@ -803,7 +803,7 @@ input:checked + label > .knob > i:before {
 }
 .store-button {
 	border: solid 2.3px rgba(247, 213, 129, 0.712);
-	max-width:19rem;
+	max-width:25rem;
 }
 
 .playstore-button {
@@ -813,7 +813,7 @@ input:checked + label > .knob > i:before {
 }
 
 .playstore-button img {
-	max-width:19rem;
+	max-width:16rem;
 }
 
 
