@@ -255,6 +255,32 @@ for old browsers */
 	font-size: 2.7rem;
 	color: rgb(12, 19, 32);
 }
+.subtext2 .num3 {
+	font-family: 'MapoPeacefull';
+	font-size: 1.5rem;
+	color: rgb(12, 19, 32);
+}
+.subtext2 .num3-2 {
+	font-family: 'Recipekorea';
+	font-size: 1.6rem;
+	color: rgb(12, 19, 32);
+}
+.subtext2 .num4 {
+	font-family: 'Recipekorea';
+	font-size: 2rem;
+	color: rgb(12, 19, 32);
+}
+.subtext1-2 {
+	padding-top: 1rem;
+	font-size: 1.8rem;
+	justify-content: center;
+}
+.subtext1-3 {
+	font-family: 'Recipekorea';
+	padding-top: 1rem;
+	font-size: 1.9rem;
+	justify-content: center;
+}
 .subtext3 {
 	padding-top: 2.5rem;
 	font-size: 2.8rem;
