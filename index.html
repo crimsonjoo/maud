@@ -43,22 +43,22 @@
 	<!-- jQuery -->
 	<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 	<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/developers.min.js"></script>
-	  <!-- KakaoTalk Share Script -->
-	  <script src="//developers.kakao.com/sdk/js/kakao.min.js"></script>
-	  <script type="text/javascript">
+	<!-- KakaoTalk Share Script -->
+	<script src="//developers.kakao.com/sdk/js/kakao.min.js"></script>
+	<script type="text/javascript">
 		Kakao.init('3a8fa8ef8af90f70866cb78383e296cb');
 
 		function sendLink() { // 카카오톡 공유하기
 		Kakao.Link.sendDefault({
-		  objectType: 'text',
-		  text: '인공지능 Maud가 당신의 모발 상태를 진단해드립니다. 당신의 탈모 여부와 헤어라인 교정/모발 이식 견적을 진단받으세요!',
-		  link: {
-			mobileWebUrl: 'https://developers.kakao.com/docs/js/kakaotalklink#텍스트-템플릿-보내기',
-			webUrl: 'https://developers.kakao.com/docs/js/kakaotalklink#텍스트-템플릿-보내기',
-		  },
+		objectType: 'text',
+		text: '인공지능 Maud가 당신의 모발 상태를 진단해드립니다. 당신의 탈모 여부와 헤어라인 교정/모발 이식 견적을 진단받으세요!',
+		link: {
+		mobileWebUrl: 'https://developers.kakao.com/docs/js/kakaotalklink#텍스트-템플릿-보내기',
+		webUrl: 'https://developers.kakao.com/docs/js/kakaotalklink#텍스트-템플릿-보내기',
+		},
 		})
-	  }
-	  </script>
+		}
+	</script>
 	<meta name="google-site-verification" content="r7dHkqq1g86PTD73U2NSouXgiTIp4k_AqYHBd5T1GRk" />
 	<meta name="naver-site-verification" content="2e4de7123eb90483e5972828cfe77ee2b2c5bd72" />
 
