@@ -851,3 +851,8 @@ input:checked + label > .knob > i:before {
 }
 
 
+.ad-banner {
+	padding : 0.5rem;
+	margin : 0 auto;
+}
+
